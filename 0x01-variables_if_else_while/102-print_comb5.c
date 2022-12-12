@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int num1 = 0, num2 = 1, num1max =98, num2max = 99;
+	int num1 = 0, num2 = 1, num1max = 98, num2max = 99;
 
 	while (num1 <= num1max)
 	{
