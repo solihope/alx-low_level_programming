@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - main function
  *
@@ -6,7 +8,7 @@
  */
 int main(void)
 {
-	int s = 0, e = 7, s2 = 1, ez =8, s3 = 2, e3 = 9;
+	int s = 0, e = 7, s2 = 1, ez = 8, s3 = 2, e3 = 9;
 
 	while (s <= e)
 	{
