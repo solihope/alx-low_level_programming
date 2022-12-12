@@ -18,7 +18,7 @@ int main(void)
 		{
 			putchar(s + '0');
 			putchar(s1 +'0');
-			s1++;
+			s1 ++;
 
 			if (s != e)
 			{
