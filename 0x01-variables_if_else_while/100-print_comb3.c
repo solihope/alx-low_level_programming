@@ -17,8 +17,8 @@ int main(void)
 		while (s1 <= e2)
 		{
 			putchar(s + '0');
-			putchar(s1 +'0');
-			s1 ++;
+			putchar(s1 + '0');
+			s1++;
 
 			if (s != e)
 			{
