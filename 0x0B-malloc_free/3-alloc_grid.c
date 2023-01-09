@@ -6,14 +6,12 @@
  * @height: height of grid
  * Return: grid with freed spaces
  */
-
-
-
 int **alloc_grid(int width, int height)
+
 {
 	int **grid;
 	int i, j;
-	
+
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
