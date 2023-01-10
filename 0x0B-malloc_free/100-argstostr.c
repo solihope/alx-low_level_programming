@@ -5,9 +5,7 @@
  * main - check the code for ALX School student
  * Return: Always 0.
  */
-
 char *argstostr(int ac, char **av)
-
 {
 	int i, j, k, size;
 	char *arg;
@@ -28,14 +26,11 @@ char *argstostr(int ac, char **av)
 		size++;
 		i++;
 	}
-	
 	arg = malloc((sizeof(char) * size) + 1);
-
 	if (arg == NULL)
 		return (NULL);
 	i = 0;
 	while (i < ac)
-
 	{
 		j = 0;
 		while (av[i][j])
@@ -44,7 +39,6 @@ char *argstostr(int ac, char **av)
 			j++;
 			k++;
 		}
-
 		arg[k] = '\n';
 		k++;
 		i++;
