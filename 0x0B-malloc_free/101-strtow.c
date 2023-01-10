@@ -1,6 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+/**
+ * print_tab - Prints an array of string
+ * @tab: The array to print
+ * Return: nothing
+ */
 int wordnos(char *s)
 {
 	int flag, c, w;
@@ -21,7 +25,13 @@ int wordnos(char *s)
 
 	return (w);
 }
-
+/**
+ * **@strtow - splits a string into words
+ * @str: string to split
+ *
+ * Return: Pointer to an array of strings
+ * or NULL (Error)
+ */
 char **strtow(char *str)
 {
 	char **matrix, *tmp;
