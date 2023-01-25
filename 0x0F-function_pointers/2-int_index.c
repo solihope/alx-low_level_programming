@@ -1,5 +1,5 @@
+#include <stdio.h>
 #include "function_pointers.h"
-
 /**
  * int_index - return index place if comparision = true, else- 1
  * @array: array
