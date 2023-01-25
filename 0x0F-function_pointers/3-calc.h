@@ -1,13 +1,6 @@
-#ifndef CALC_H
-#define CALC_H
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
+#ifndef CALC_H										#define CALC_H
 /**
  * struct op - Struct op
- *
  * @op: The operator
  * @f: The function associated
  */
