@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * array_iteration - executes a function given as a parameter
+ * array_iterator - executes a function given as a parameter
  * @array: array
  * @size: how many element to print
  * @action: pointer to print
