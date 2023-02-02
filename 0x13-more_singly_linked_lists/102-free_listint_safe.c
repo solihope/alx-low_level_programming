@@ -8,43 +8,55 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *killnode;
-	listint_t *current;
-	listadd_t *headadd;
-	listadd_t *checker;
-	size_t count;
 
-	count = 0;
-	current = *h;
-	headadd = NULL;
-	if (h != NULL)
-	{
-		while (current != NULL)
-		{
-			checker = headadd;
-			while (checker != NULL)
-			{
-				if (current == checker->address)
-				{
-					free(current);
-					free_listadd(headadd);
-					*h = NULL;
-					return (count);
-				}
-				checker = checker->next;
-			}
-			killnode = current;
-			if (add_nodeaddress(&headadd, current) == NULL)
-			{
-				free_listadd(headadd);
-				exit(98);
-			}
-			current = current->next;
-			free(killnode);
-			count++;
-		}
-		free_listadd(headadd);
-		*h = NULL;
-	}
-	return (count);
-}
+	 size_t len = 0;
+
+	  int diff;
+
+	   listint_t *temp;
+
+	    if (!h || !*h)
+
+		     return (0);
+
+	     while (*h)
+
+		      {
+
+			       diff = *h - (*h)->next;
+
+			        if (diff > 0)
+
+					 {
+
+						  temp = (*h)->next;
+
+						   free(*h);
+
+						    *h = temp;
+
+						     len++;
+
+						      }
+
+				 else
+
+					  {
+
+						   free(*h);
+
+						    *h = NULL;
+
+						     len++;
+
+						      break;
+
+						       }
+
+				  }
+
+	      *h = NULL;
+
+	       return (len);
+
+
